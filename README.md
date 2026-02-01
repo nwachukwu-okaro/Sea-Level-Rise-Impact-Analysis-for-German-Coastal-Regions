@@ -1,5 +1,5 @@
-##Sea Level Rise Impact Analysis for German Coastal Regions
-1. Project Overview
+# Sea Level Rise Impact Analysis for German Coastal Regions
+## 1. Project Overview
 
 This project analyses the potential impact of sea level rise (SLR) on Germany’s coastal regions and islands, focusing on simulated scenarios of 2 m and 4 m sea level rise.
 
@@ -13,7 +13,7 @@ Quantify land loss in square kilometres (km²)
 
 Repeat the analysis easily for any future sea level value
 
-2. Software, Tools, and Skills Used
+## 2. Software, Tools, and Skills Used
 Software
 
 QGIS (Long Term Release – QGIS 3.x LTR)
@@ -40,7 +40,7 @@ Attribute table analysis and area calculation
 
 Cartographic design and map layout
 
-3. Data Utilized
+## 3. Data Utilized
 3.1 Digital Elevation Model (DEM)
 
 Dataset: Copernicus GLO-30 DEM
@@ -52,7 +52,7 @@ Source: Copernicus / ESA
 Purpose:
 Used to represent ground elevation and determine which areas lie at or below specific sea level thresholds.
 
-3.2 Administrative Boundary Data
+## 3.2 Administrative Boundary Data
 
 Dataset: Germany national boundary shapefile
 
@@ -61,7 +61,7 @@ Source: GADM (Global Administrative Areas)
 Purpose:
 Defines the official spatial extent of Germany, ensuring the analysis remains geographically accurate.
 
-4. Step-by-Step Methodology
+## 4. Step-by-Step Methodology
 Step 1: Load and Organize Base Data
 
 The German administrative boundary and the Copernicus DEM were loaded into QGIS and organized logically within the project.
@@ -119,7 +119,6 @@ DEM <= 2   (for 2m SLR)
 DEM <= 4   (for 4m SLR)
 
 
-Output:
 Binary raster where:
 
 1 = Flooded
@@ -185,7 +184,7 @@ Clean legend (Flooded / Not Flooded)
 
 Scale bar, north arrow, and annotation
 
-5. Interpretation of Results
+## 5. Interpretation of Results
 
 Flood-impacted areas are shown in blue
 
@@ -199,7 +198,7 @@ For example:
 
 A 4 m sea level rise scenario indicates a potential loss of 32,857.60 km² of land across Germany’s coastal and island regions.
 
-6. Key Project Outcomes
+## 6. Key Project Outcomes
 
 Repeatable workflow for any sea level value
 
@@ -209,6 +208,6 @@ Clear, presentation-ready maps
 
 Beginner-friendly methodology suitable for academic use
 
-7. Conclusion
+## 7. Conclusion
 
 This project demonstrates how open geospatial data and QGIS can be used to model climate-driven sea level rise impacts with high transparency and reproducibility. The workflow supports both scientific analysis and policy-oriented decision making, making it suitable for academic research, environmental planning, and coastal risk assessment.
